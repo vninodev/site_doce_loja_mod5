@@ -38,17 +38,26 @@
         <div >
             <form>
             <label for="text">Nome de Usuario:</label>
-            <input type="text" placeholder="Ex: maria1991">
+            <input type="text" placeholder="Ex: maria1991" required maxlength="15" minlength="8">
 
-            <label for="text" >Nome Completo</label>
-            <input type="text" placeholder="Ex: Maria De Souza Silva">
+            <label for="text" >Nome Completo:</label>
+            <input type="text" placeholder="Ex: Maria De Souza Silva" required maxlength="50">
 
             <label for="email" >E-mail:</label>
-            <input type="email" placeholder="Ex: mariasouza1991@gmail.com">
+            <input type="email" placeholder="Ex: mariasouza1991@gmail.com" required>
             
+            <label for="password" >Senha: </label>
+            <input type="password" placeholder="*******" required  maxlength="15" minlength="8">
+
             <label for="tel" >Celular:</label>
-            <input type="tel" placeholder=" 11 1111 1111" >
+            <input type="tel" placeholder=" 11 1111 1111" required  >
+
+            <label for="birthdate" > Data de Nascimento: </label>
+            <input type="date" id="birthdate" name="birthdate" required >
+
             <button type="submit" >Enviar</button>
+
+
             </form>
         </div>
     </section>
